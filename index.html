@@ -27,3 +27,114 @@ body   {text-align: center;}
       <p2 style="text-align:center;
            font-family:monospace;">All Cryo characters in Genshin Impact are Noelle, Ningguang, Gorou, Yun Jin, Albedo, Itto, and Zhongli.</p2>
    
+
+<html>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+ 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="56832E5F-1C44-4E14-9AB2-1403490A6BBA.jpeg" style="width:80%">
+    <div class="text">Noelle</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="2B4A6597-4161-4819-A5FC-B39D4721AE95.jpeg" style="width:80%">
+    <div class="text">Ningguang</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="43EAF235-97AD-47E2-ADB8-D40455CF9953.jpeg" style="width:80%">
+    <div class="text">Gorou</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="06067A6F-09C2-4F59-AD63-42F04DFAC22C.jpeg" style="width:80%">
+    <div class="text">Yun Jin</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="6CF7B23C-DE26-4A2B-A098-9A62B6BA1AD3.jpeg" style="width:80%">
+    <div class="text">Albedo</div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="68F76062-8FDB-4AA6-9FE3-A5E61A35A753.jpeg" style="width:80%">
+    <div class="text">Itto</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="6E7DC04C-5273-4CF5-A416-601033AB9150.jpeg" style="width:80%">
+    <div class="text">Zhongli</div>
+  </div>
+
+ <style>
+
+ /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+   </style>
+   
+<script>
+                     
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+          </body>
+</html>
